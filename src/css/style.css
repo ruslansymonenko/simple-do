@@ -38,32 +38,88 @@ body {
 
 .header__user {
   display: flex;
+  align-items: center;
+  padding-left: 40px;
+  width: 370px;
+  background-color: #FEFEFF;
+  border-bottom: 1px solid #1E1926;
 }
+
+.header-user__btn{
+  height: 55px;
+  width: 55px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
 .header-user__logo {
+  height: 50px;
+  width: 54px;
 }
+
 .header-user__name {
+  margin-left: 40px;
+  font-size: 20px;
+  font-weight: 600;
 }
+
 .header-info {
+  display: flex;
+  width: 910px;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 40px;
+  background: linear-gradient(91.01deg, rgba(103, 70, 239, 0.54) -3.98%, rgba(226, 106, 68, 0.15) 101.41%);
 }
+
 .header-info__top {
+  display: flex;
+  align-items: center;
 }
+
 .header-info__list-name {
+  font-weight: 700;
+  font-size: 28px;
+  color: #FEFEFF;
 }
+
 .header-info__weather {
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
 }
+
 .header-info__weather-descr {
+  font-weight: 700;
+  font-size: 28px;
+  color: #FEFEFF;
 }
 .header-info__weather-img {
+  margin-left: 20px;
 }
+
 .header-info__bottom {
+  display: flex;
+  align-items: center;
 }
 .header-info__date {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  font-size: 26px;
+  color: #FEFEFF;
 }
 .header-info__date-day {
 }
 .header-info__date-mounth {
+  margin-left: 20px;
 }
 .header-info__temperature {
+  margin-left: 368px;
+  font-weight: 600;
+  font-size: 26px;
+  color: #FEFEFF;
 }
 
 /*--------------MAIN*/
