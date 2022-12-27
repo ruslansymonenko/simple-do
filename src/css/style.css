@@ -1,4 +1,5 @@
 body {
+  height: 100vh;
   background-color: #EEF1F6;
   font-family: 'Raleway', sans-serif;
   font-style: normal;
@@ -6,3 +7,67 @@ body {
   font-size: 18px;
 }
 
+.wrapper{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+
+.app{
+  display: flex;
+  flex-direction: column;
+  width: 1280px;
+  height: 832px;
+  border: 1px solid black;
+}
+
+/*------------------HEADER*/
+
+.header{
+  height: 133px;
+  width: 1280px;
+  display: flex;
+}
+
+.header__user {
+  display: flex;
+}
+.header-user__logo {
+}
+.header-user__name {
+}
+.header-info {
+}
+.header-info__top {
+}
+.header-info__list-name {
+}
+.header-info__weather {
+}
+.header-info__weather-descr {
+}
+.header-info__weather-img {
+}
+.header-info__bottom {
+}
+.header-info__date {
+}
+.header-info__date-day {
+}
+.header-info__date-mounth {
+}
+.header-info__temperature {
+}
+
+/*--------------MAIN*/
+
+.main {
+  display: flex;
+}
