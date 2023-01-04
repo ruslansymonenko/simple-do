@@ -14,7 +14,7 @@ export function taskRender (taskText, checked = false, favorite = false) {
     let checkBox = document.createElement('input');
     checkBox.classList.add('task-check');
     checkBox.setAttribute('type', 'checkbox');
-    checkBox.value = check;
+    checkBox.checked = check;
 
     let textContainer = document.createElement('div');
     textContainer.classList.add('task-text');

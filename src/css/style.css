@@ -225,6 +225,7 @@ body {
   border: none;
   border-radius: 5px;
   font-weight: 600;
+  padding: 0 5px;
 }
 
 .new-task__text:focus{
@@ -263,6 +264,7 @@ body {
   width: 863px;
   min-height: 67px;
   background-color: #FEFEFF;
+  margin-bottom: 10px;
 }
 .task-check {
   width: 27px;
