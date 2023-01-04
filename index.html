@@ -50,26 +50,41 @@
       <main class="main">
         <section class="main-category">
           <ul class="main-category__list">
-            <li class="main-category__list-item">All Tasks</li>
-            <li class="main-category__list-item">Favorite</li>
-            <li class="main-category__list-item">Shopping</li>
+            <li class="main-category__list-item">
+              <span class="main-category__name">All Tasks</span>
+            </li>
+            <li class="main-category__list-item">
+              <span class="main-category__name">Favorite</span>
+            </li>
+            <li class="main-category__list-item">
+              <span class="main-category__name">Shopping</span>
+            </li>
           </ul>
+          <button class="add-list__btn">
+            <img src="./src/images/add-img.svg" alt="add new list">
+            <span>New List</span>
+          </button>
         </section>
         <section class="main-tasks">
           <header class="main-tasks__header">
-
+            <input class="new-task__text" type="text">
+            <button class="new-task__add-btn">Add</button>
           </header>
           <div class="main-tasks__container">
             <ul class="main-tasks__list">
               <li class="main-tasks__list-item">
                 <input class="task-check" type="checkbox">
-                <div class="task-text">What I need to do</div>
-                <button class="task-favorite__btn">
-                  <img src="./src/images/favorite-ico.svg" alt="favorite btn">
-                </button>
-                <button class="task-delete__btn">
-                  <img src="./src/images/trash-ico.svg" alt="delete btn">
-                </button>
+                <div class="task-text">
+                  What I need to do?
+                </div>
+                <div class="task-btns">
+                  <button class="task-favorite__btn">
+                    <img src="./src/images/favorite-ico.svg" alt="favorite btn">
+                  </button>
+                  <button class="task-delete__btn">
+                    <img src="./src/images/trash-ico.svg" alt="delete btn">
+                  </button>
+                </div>
               </li>
             </ul>
           </div>
