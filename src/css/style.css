@@ -1,3 +1,8 @@
+:root {
+  --scrolbar-category-list: none;
+  --scrolbar-task-list: none;
+}
+
 body {
   height: 100vh;
   background-color: #EEF1F6;
@@ -152,7 +157,7 @@ body {
   height: 429px;
   flex-direction: column;
   margin-top: 25px;
-  overflow-y: scroll;
+  overflow-y: var(--scrolbar-category-list);
 }
 
 .main-category__list::-webkit-scrollbar{
@@ -281,7 +286,7 @@ body {
 
 .main-tasks__list{
   height: 349px;
-  overflow-y: scroll;
+  overflow-y: var(--scrolbar-task-list);
 }
 
 .main-tasks__list::-webkit-scrollbar{
