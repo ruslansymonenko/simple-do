@@ -7,7 +7,6 @@ export function addNewTasks () {
   const categoryListElements = document.querySelectorAll('.main-category__list-item');
   const taskListElements = document.querySelectorAll('.main-tasks__list-item');
   const inputNewTaskText = document.querySelector('.new-task__text');
-  const btnAddNewTask = document.querySelector('.new-task__add-btn');
 
   let task;
 
@@ -15,7 +14,7 @@ export function addNewTasks () {
     let id ="id" + Math.random().toString(16).slice(2);
 
     task = new Task(id, inputNewTaskText.value);;
-    task.taskRender(taskList)
+    // task.taskRender(taskList)
 
     checkScrollbarVisible(taskList, taskListElements)
   } else {
