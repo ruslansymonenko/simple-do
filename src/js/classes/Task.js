@@ -1,24 +1,24 @@
-export function taskRender (taskText, checked = false, favorite = false) {
-  const taskList = document.querySelector('.main-tasks__list');
+export class Task {
+  constructor (id, taskText, isFavorite = false, check = false) {
+    this.id = id;
+    this.check = check;
+    this.taskText = taskText;
+    this.isFavorite = isFavorite;
+  }
 
-  let taskForRendering = {
-    check: checked,
-    text: taskText,
-    isFavorite: favorite
-  };
-
-  function createTask (check, text, isFavorite = false) {
+  //container, text, isFavorite = false, checked = false
+  taskRender (container) {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');
 
     let checkBox = document.createElement('input');
     checkBox.classList.add('task-check');
     checkBox.setAttribute('type', 'checkbox');
-    checkBox.checked = check;
+    checkBox.checked = this.check;
 
     let textContainer = document.createElement('div');
     textContainer.classList.add('task-text');
-    textContainer.textContent = text;
+    textContainer.textContent = this.taskText;
 
     let btnsContainer = document.createElement('div');
     btnsContainer.classList.add('task-btns');
@@ -49,8 +49,7 @@ export function taskRender (taskText, checked = false, favorite = false) {
     task.append(textContainer);
     task.append(btnsContainer);
 
-    taskList.append(task);
+    container.append(task);
   }
-
-  createTask(taskForRendering.check, taskForRendering.text, taskForRendering.isFavorite);
 }
+

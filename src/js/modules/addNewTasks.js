@@ -1,4 +1,4 @@
-import {taskRender} from './taskRender.js'
+import {Task} from '../classes/Task.js';
 import {checkScrollbarVisible} from './checkScrollbarVisible.js'
 
 export function addNewTasks () {
@@ -11,7 +11,11 @@ export function addNewTasks () {
 
   btnAddNewTask.addEventListener('click', () => {
     if (inputNewTaskText.value) {
-      taskRender(inputNewTaskText.value);
+      let id ="id" + Math.random().toString(16).slice(2);
+
+      const task = new Task(id, inputNewTaskText.value);;
+      task.taskRender(taskList)
+
       checkScrollbarVisible(taskList, taskListElements)
     } else {
       alert('Please, write task text');
