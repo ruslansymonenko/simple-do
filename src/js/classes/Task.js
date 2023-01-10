@@ -6,7 +6,6 @@ export class Task {
     this.isFavorite = isFavorite;
   }
 
-  //container, text, isFavorite = false, checked = false
   taskRender (container) {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');

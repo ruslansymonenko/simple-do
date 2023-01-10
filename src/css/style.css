@@ -3,6 +3,16 @@
   --scrolbar-task-list: none;
 }
 
+@keyframes taskShowing {
+  from {
+    width: 200px;
+  }
+
+  to {
+    width: 863px;
+  }
+}
+
 body {
   height: 100vh;
   background-color: #EEF1F6;
@@ -310,6 +320,8 @@ body {
   min-height: 67px;
   background-color: #FEFEFF;
   margin-bottom: 10px;
+  animation-duration: 0.5s;
+  animation-name: taskShowing;
 }
 .task-check {
   width: 27px;
