@@ -9,16 +9,18 @@ export function addNewTasks () {
   const inputNewTaskText = document.querySelector('.new-task__text');
   const btnAddNewTask = document.querySelector('.new-task__add-btn');
 
-  btnAddNewTask.addEventListener('click', () => {
-    if (inputNewTaskText.value) {
-      let id ="id" + Math.random().toString(16).slice(2);
+  let task;
 
-      const task = new Task(id, inputNewTaskText.value);;
-      task.taskRender(taskList)
+  if (inputNewTaskText.value) {
+    let id ="id" + Math.random().toString(16).slice(2);
 
-      checkScrollbarVisible(taskList, taskListElements)
-    } else {
-      alert('Please, write task text');
-    }
-  })
+    task = new Task(id, inputNewTaskText.value);;
+    task.taskRender(taskList)
+
+    checkScrollbarVisible(taskList, taskListElements)
+  } else {
+    alert('Please, write task text');
+  }
+
+  return task
 }

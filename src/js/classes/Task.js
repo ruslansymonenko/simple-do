@@ -10,6 +10,10 @@ export class Task {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');
 
+    if (this.isFavorite === true) {
+      task.classList.add('main-tasks__list-item--favorite');
+    }
+
     let checkBox = document.createElement('input');
     checkBox.classList.add('task-check');
     checkBox.setAttribute('type', 'checkbox');
@@ -21,8 +25,6 @@ export class Task {
 
     let btnsContainer = document.createElement('div');
     btnsContainer.classList.add('task-btns');
-
-
 
     let favoriteBtn = document.createElement('button');
     favoriteBtn.classList.add('task-favorite__btn');

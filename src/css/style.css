@@ -322,7 +322,15 @@ body {
   margin-bottom: 10px;
   animation-duration: 0.5s;
   animation-name: taskShowing;
+  border-radius: 5px;
+  transition: 0.4s;
 }
+
+.main-tasks__list-item--favorite {
+  background-color: #EDE0DF;
+  border: 2px solid #FBC34E;
+}
+
 .task-check {
   width: 27px;
   height: 27px;
