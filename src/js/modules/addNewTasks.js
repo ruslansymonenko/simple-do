@@ -13,8 +13,7 @@ export function addNewTasks () {
   if (inputNewTaskText.value) {
     let id ="id" + Math.random().toString(16).slice(2);
 
-    task = new Task(id, inputNewTaskText.value);;
-    // task.taskRender(taskList)
+    task = new Task(id, inputNewTaskText.value);
 
     checkScrollbarVisible(taskList, taskListElements)
   } else {

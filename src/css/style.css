@@ -137,11 +137,22 @@ body {
   margin-left: 20px;
 }
 
-.header-info__temperature {
+.header-info__weather-bottom{
   margin-left: 368px;
+  display: flex;
+}
+
+.header-info__weather-temperature {
   font-weight: 600;
   font-size: 26px;
   color: #FEFEFF;
+}
+
+.header-info__weather-city{
+  font-weight: 600;
+  font-size: 26px;
+  color: #FEFEFF;
+  margin-left: 30px;
 }
 
 /*--------------MAIN*/
