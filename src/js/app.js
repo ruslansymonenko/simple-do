@@ -10,8 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const allTasks = [];
 
   //Test task for checking functionality
-  const testTask = new Task('abcd12345', 'Learn English', true, false);
-  allTasks.push(testTask);
+  // const testTask = new Task('abcd12345', 'Learn English', true, false);
+  // allTasks.push(testTask);
 
   function taskListRendering () {
     allTasks.forEach(item => {
@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', () => {
   function start () {
     taskListRendering();
     getWeather();
+
+    const weatherRefreshInterval = setInterval(getWeather, 2000000);
+
     
     btnAddNewTask.addEventListener('click', () => {
       let addedTask = addNewTasks();
