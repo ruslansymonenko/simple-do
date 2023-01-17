@@ -1,5 +1,5 @@
 export function getWeather () {
-  const weatherDescrContainer = document.querySelector('.header-info__weather-descr');
+  const weatherDescrContainer = document.querySelector('.header-info__weather-descr--top');
   const temperatureContainer = document.querySelector('.header-info__weather-temperature');
   const cityContainer = document.querySelector('.header-info__weather-city');
   const weatherImg = document.querySelector('.header-info__weather-img');
