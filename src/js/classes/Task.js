@@ -9,6 +9,7 @@ export class Task {
   taskRender (container) {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');
+    task.setAttribute('data-id', this.id);
 
     if (this.isFavorite === true) {
       task.classList.add('main-tasks__list-item--favorite');
