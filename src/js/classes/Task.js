@@ -6,6 +6,14 @@ export class Task {
     this.isFavorite = isFavorite;
   }
 
+  setFavoriteStatus (favoriteCheck = false) {
+    if (favoriteCheck === true) {
+      this.isFavorite = true;
+    } else if (favoriteCheck === false) {
+      this.isFavorite = false;
+    }
+  }
+
   taskRender (container) {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');

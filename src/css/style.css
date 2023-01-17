@@ -3,15 +3,15 @@
   --scrolbar-task-list: none;
 }
 
-@keyframes taskShowing {
+/* @keyframes taskShowing {
   from {
-    width: 500px;
+    width: 863px;
   }
 
   to {
     width: 863px;
   }
-}
+} */
 
 body {
   height: 100vh;
@@ -341,8 +341,8 @@ body {
   min-height: 67px;
   background-color: #FEFEFF;
   margin-bottom: 10px;
-  animation-duration: 0.5s;
-  animation-name: taskShowing;
+  /* animation-duration: 0.5s;
+  animation-name: taskShowing; */
   border-radius: 5px;
   transition: 0.4s;
 }
