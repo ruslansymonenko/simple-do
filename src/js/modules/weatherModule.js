@@ -10,7 +10,6 @@ export function getWeather () {
     .then((response) => {return response.json()})
     .then(data => {
       let temperature = parseInt(data.current.temp_c);
-      console.log('get weather')
 
       cityContainer.textContent = data.location.name;
       temperatureContainer.textContent = `${Math.round(temperature)} C`;

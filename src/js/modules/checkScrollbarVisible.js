@@ -19,7 +19,6 @@ export function checkScrollbarVisible (list, listElements) {
 
   } else if (list.classList.contains('main-tasks__list')) {
     let checker = checkListLength(listElements, 4);
-    console.log(checker);
 
     if (checker == true) {
       document.documentElement.style.setProperty("--scrolbar-task-list", "scroll");

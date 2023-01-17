@@ -3,6 +3,7 @@ import {Task} from './classes/Task.js';
 import {getWeather} from './modules/weatherModule.js';
 import {taskListRender} from './modules/taskListRender.js';
 import { makeFavorite } from './modules/makeFavorite.js';
+import { getDate } from './modules/getDate.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -23,14 +24,17 @@ document.addEventListener('DOMContentLoaded', () => {
   function start () {
     taskListRender(allTasks, taskListContainer);
     let allDeleteBtns = refreshElements('.task-delete__btn');
-    let allFavorteBtns = refreshElements('.task-favorite__btn');
+    let allFavoriteBtns = refreshElements('.task-favorite__btn');
 
-    makeFavorite(allFavorteBtns, allTasks);
+    makeFavorite(allFavoriteBtns, allTasks);
 
 
     //Weather
     getWeather();
     const weatherRefreshInterval = setInterval(getWeather, 2000000);
+
+    //Date
+    getDate();
     
     btnAddNewTask.addEventListener('click', () => {
       let addedTask = addNewTasks();
@@ -39,9 +43,9 @@ document.addEventListener('DOMContentLoaded', () => {
       taskListRender(allTasks, taskListContainer);
 
       let allDeleteBtns = refreshElements('.task-delete__btn');
-      let allFavorteBtns = refreshElements('.task-favorite__btn');
+      let allFavoriteBtns = refreshElements('.task-favorite__btn');
   
-      makeFavorite(allFavorteBtns, allTasks);
+      makeFavorite(allFavoriteBtns, allTasks);
     })
 
 
