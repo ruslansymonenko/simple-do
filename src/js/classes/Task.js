@@ -1,5 +1,8 @@
-export class Task {
-  constructor (id, taskText, isFavorite = false, check = false) {
+import { List } from "./List.js";
+
+export class Task extends List {
+  constructor (id, taskText, taskLists, isFavorite = false, check = false) {
+    super(taskLists);
     this.id = id;
     this.check = check;
     this.taskText = taskText;
