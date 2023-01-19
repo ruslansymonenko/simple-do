@@ -10,6 +10,7 @@ import { addNewList } from './modules/addNewList.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   const btnAddNewTask = document.querySelector('.new-task__add-btn');
+  const addListBtn = document.querySelector('.add-list__btn');
   const taskListContainer = document.querySelector('.main-tasks__list');
   
   const allTasks = [];
@@ -25,7 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let elements = document.querySelectorAll(selector);
     return elements
   }
-
 
 
   function start () {
@@ -54,7 +54,9 @@ document.addEventListener('DOMContentLoaded', () => {
       makeFavorite(allFavoriteBtns, allTasks);
     })
 
-    addNewList();
+    addListBtn.addEventListener('click', () => {
+      addNewList('New list');
+    })
   }
 
   start();

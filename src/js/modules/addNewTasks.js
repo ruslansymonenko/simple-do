@@ -15,7 +15,7 @@ export function addNewTasks () {
 
     task = new Task(id, inputNewTaskText.value, {userList: '', allTasksList: true, favoriteList: false});
 
-    checkScrollbarVisible(taskList, taskListElements)
+    checkScrollbarVisible(taskList, taskListElements);
   } else {
     alert('Please, write task text');
   }
