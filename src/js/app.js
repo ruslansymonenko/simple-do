@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const testTask = new Task('abcd12345', 'Learn English', {userList: 'sport', allTasksList: true, favoriteList: false});
   allTasks.push(testTask);
   console.log(testTask);
+  console.log(testTask.getTaskList())
 
   function refreshElements(selector) {
     let elements = document.querySelectorAll(selector);
