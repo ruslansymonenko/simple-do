@@ -1,7 +1,8 @@
-import {addNewTasks} from './modules/addNewTasks.js';
-import {Task} from './classes/Task.js';
-import {getWeather} from './modules/weatherModule.js';
-import {taskListRender} from './modules/taskListRender.js';
+import { List } from './classes/List.js';
+import { Task } from './classes/Task.js';
+import { addNewTasks } from './modules/addNewTasks.js';
+import { getWeather } from './modules/weatherModule.js';
+import { taskListRender } from './modules/taskListRender.js';
 import { makeFavorite } from './modules/makeFavorite.js';
 import { getDate } from './modules/getDate.js';
 import { addNewList } from './modules/addNewList.js';
@@ -15,8 +16,10 @@ document.addEventListener('DOMContentLoaded', () => {
   const allList = [];
 
   //Test task for checking functionality
-  const testTask = new Task('abcd12345', 'Learn English', true, false);
+  const testTask = new Task('abcd12345', 'Learn English', {userList: 'sport', allTasksList: true, favoriteList: false});
   allTasks.push(testTask);
+  console.log(testTask);
+  console.log(testTask.getTaskList())
 
   function refreshElements(selector) {
     let elements = document.querySelectorAll(selector);

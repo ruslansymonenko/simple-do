@@ -1,0 +1,282 @@
+@media (max-width: 1400px) {
+  
+}
+
+@media (max-width: 1300px) {
+  .app{
+    width: 1020px;
+  }
+
+  .container {
+    width: 1020px;
+    max-width: 1020px;
+  }
+
+  .new-task__text{
+    width: 612px;
+  }
+
+  .task-text{
+    width: 612px;
+  }
+
+  .main-category{
+    width: 405px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .header-info__list-name{
+    font-size: 20px;
+  }
+  .header-info__date-day{
+    font-size: 18px;
+  }
+  .header-info__month-name{
+    font-size: 18px;
+  }
+  .header-info__date-date{
+    font-size: 18px;
+  }
+  .header-info__weather-descr--top{
+    font-size: 20px;
+  }
+  .header-info__weather-temperature{
+    font-size: 18px;
+  }
+  .header-info__weather-city{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 1060px) {
+  .app{
+    width: 750px;
+  }
+
+  .container {
+    width: 750px;
+    max-width: 750px;
+  }
+
+  .header-info__list-name{
+    font-size: 16px;
+  }
+  .header-info__date-day{
+    font-size: 14px;
+  }
+  .header-info__month-name{
+    font-size: 14px;
+  }
+  .header-info__date-date{
+    font-size: 14px;
+  }
+  .header-info__weather-descr--top{
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  .header-info__weather-temperature{
+    font-size: 14px;
+  }
+  .header-info__weather-city{
+    font-size: 14px;
+  }
+
+  .header__user{
+    max-width: 240px;
+    width: 240px;
+  }
+  
+  .header-user__name{
+    font-size: 18px;
+  }
+
+  .header-user__btn{
+    height: 40px;
+    width: 40px;
+  }
+
+  .header-user__logo{
+    height: 48px;
+    width: 40px;
+  }
+  .header-user__name{
+    font-size: 14px;
+  }
+  .header__user{
+    padding: 0 20px;
+  }
+
+  .new-task__text{
+    width: 412px;
+  }
+
+  .task-text{
+    width: 412px;
+  }
+
+  .main-category{
+    width: 236px;
+  }
+}
+
+@media (max-width: 769px) {
+  .app{
+    width: 550px;
+  }
+
+  .container {
+    width: 550px;
+    max-width: 550px;
+  }
+
+  .header-info__weather{
+    width: 115px;
+  }
+  .header-info__weather-descr--bottom{
+    margin-top: 15px;
+  }
+  .header-info__weather-city{
+    margin-left: 15px;
+  }
+
+  .header-info__date-date{
+    margin-left: 10px;
+  }
+
+  .header-info__date{
+    margin-top: 15px;
+  }
+
+  .header__user{
+    width: 180px;
+  }
+  .header-user__name{
+    margin-left: 25px;
+  }
+
+  .header-info__weather-img {
+    height: 35px;
+    width: 35px;
+  }
+
+
+  .new-task__text{
+    width: 295px;
+  }
+
+  .task-text{
+    width: 295px;
+  }
+
+  .main-category{
+    width: 198px;
+  }
+
+}
+
+@media (max-width: 576px) {
+  .app{
+    width: 470px;
+  }
+
+  .container {
+    width: 470px;
+    max-width: 470px;
+  }
+  .header-info{
+    flex-direction: column;
+    padding-left: 5px;
+  }
+
+  .header-info__left{
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+
+  }
+  .header-info__list-name{
+    margin-bottom: 0px;
+  }
+
+  .header-info__date{
+    margin-top: 0px;
+    margin-left: 10px;
+  }
+  .header-info__right{
+    width: 100%;
+    flex-direction: row;
+  }
+
+  .header-info__right-weather{
+    flex-direction: row;
+  }
+
+  .header-info__weather-descr--bottom{
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+  }
+
+  .new-task__text{
+    width: 215px;
+  }
+
+  .task-text{
+    width: 215px;
+  }
+
+  .main-category{
+    width: 210px;
+  }
+
+  .main-category__name{
+    margin-left: 15px;
+    font-size: 14px;
+  }
+
+  .add-list__btn{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .app{
+    width: 380px;
+  }
+
+  .container {
+    width: 380px;
+    max-width: 380px;
+  }
+  
+  .header-info__list-name{
+    font-size: 14px;
+  }
+
+  .header-info__date{
+    flex-direction: column;
+  }
+
+  .header-info__weather-descr--top{
+    margin-left: 5px;
+    font-size: 14px;
+  }
+  .header-info__weather-img{
+    width: 25px;
+    height: 25px;
+  }
+
+
+  .new-task__text{
+    width: 135px;
+  }
+
+  .task-text{
+    width: 125px;
+  }
+
+  .main-category{
+    width: 236px;
+  }
+}
