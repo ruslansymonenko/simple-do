@@ -4,6 +4,7 @@ import {getWeather} from './modules/weatherModule.js';
 import {taskListRender} from './modules/taskListRender.js';
 import { makeFavorite } from './modules/makeFavorite.js';
 import { getDate } from './modules/getDate.js';
+import { addNewList } from './modules/addNewList.js';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -11,6 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const taskListContainer = document.querySelector('.main-tasks__list');
   
   const allTasks = [];
+  const allList = [];
 
   //Test task for checking functionality
   const testTask = new Task('abcd12345', 'Learn English', true, false);
@@ -21,13 +23,14 @@ document.addEventListener('DOMContentLoaded', () => {
     return elements
   }
 
+
+
   function start () {
     taskListRender(allTasks, taskListContainer);
     let allDeleteBtns = refreshElements('.task-delete__btn');
     let allFavoriteBtns = refreshElements('.task-favorite__btn');
 
     makeFavorite(allFavoriteBtns, allTasks);
-
 
     //Weather
     getWeather();
@@ -48,7 +51,7 @@ document.addEventListener('DOMContentLoaded', () => {
       makeFavorite(allFavoriteBtns, allTasks);
     })
 
-
+    addNewList();
   }
 
   start();
