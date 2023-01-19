@@ -41,6 +41,7 @@ body {
 }
 
 .app{
+  position: relative;
   display: flex;
   flex-direction: column;
   max-width: 1280px;
@@ -48,6 +49,81 @@ body {
   -webkit-box-shadow: 1px 3px 17px -4px #000000; 
   box-shadow: 1px 3px 10px -4px #000000;
   border-radius: 5px;
+}
+
+/*----------------------MODAL*/
+.modal__list-name{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ad9ef29d;
+  height: 300px;
+  width: 500px;
+  border-radius: 5px;
+  top: 27%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto;
+  -webkit-box-shadow: 1px 3px 17px -4px #000000; 
+  box-shadow: 1px 3px 10px -4px #000000;
+  transform: translateX(-250%);
+  transition: ease-in-out .5s; 
+}
+
+.modal__list-name--active{
+  transform: translateX(0%);
+}
+
+.modal-list__content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 280px;
+  width: 480px;
+  background-color: #EEF1F6;
+  border-radius: 5px;
+}
+
+.modal-list__name-input{
+  width: 300px;
+  height: 40px;
+  margin-bottom: 50px;
+  border: none;
+  -webkit-box-shadow: 1px 2px 9px -3px rgba(0,0,0,0.75);
+  -moz-box-shadow: 1px 2px 9px -3px rgba(0,0,0,0.75);
+  box-shadow: 1px 2px 9px -3px rgba(0,0,0,0.75);
+}
+
+.modal-list__name-input:focus{
+  outline: none;
+}
+
+.modal-list__btn{
+  height: 35px;
+  width: 90px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.modal-list__btn:hover{
+  transform: scale(1.03);
+}
+
+.modal-list__btn-confirm{
+  background: rgba(144, 120, 240, 0.87);
+}
+
+.modal-list__btn-cancel{
+  background-color: rgba(226, 105, 68, 0.37);
+}
+
+.modal-list__btn + .modal-list__btn{
+  margin-left: 20px;
 }
 
 /*------------------HEADER*/
