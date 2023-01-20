@@ -10,7 +10,8 @@ export function addNewList () {
 
   modalList.classList.add('modal__list-name--active');
 
-  confirmNameBtn.addEventListener('click', () => {
+  function renderList () {
+    console.log('yes');
     let newList = document.createElement('li');
     newList.classList.add('main-category__list-item');
   
@@ -21,15 +22,25 @@ export function addNewList () {
     console.log(newListName);
     newList.append(newListName);
     listCatalog.append(newList);
+  }
 
-    inputNamelist.value = '';
-    modalList.classList.remove('modal__list-name--active');
-  })
+  function handleBtns () {
+    confirmNameBtn.addEventListener('click', () => {
+      if(inputNamelist.value) {
+        renderList();
+      }
+  
+      inputNamelist.value = '';
+      modalList.classList.remove('modal__list-name--active');
+    })
+  
+    cancelNameBtn.addEventListener('click', () => {
+      inputNamelist.value = '';
+      modalList.classList.remove('modal__list-name--active');
+    })
+  }
 
-  cancelNameBtn.addEventListener('click', () => {
-    inputNamelist.value = '';
-    modalList.classList.remove('modal__list-name--active');
-  })
+  handleBtns();
 
 
   checkScrollbarVisible(listCatalog, listCatalogElements);

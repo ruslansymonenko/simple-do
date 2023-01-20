@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
     })
 
     addListBtn.addEventListener('click', () => {
-      addNewList();
+      let newList = addNewList();
     })
   }
 
