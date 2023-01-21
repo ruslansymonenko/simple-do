@@ -5,6 +5,8 @@ export function taskListRender(arr, taskContainer) {
   taskList.forEach(item => item.remove());
 
   arr.forEach(item => {
-    item.taskRender(taskContainer);
+    if (item) {
+      item.taskRender(taskContainer);
+    }
   })
 }

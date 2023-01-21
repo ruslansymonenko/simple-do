@@ -44,7 +44,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     btnAddNewTask.addEventListener('click', () => {
       let addedTask = addNewTasks();
-      allTasks.push(addedTask);
+      if (addedTask) {
+        allTasks.push(addedTask);
+      }
 
       taskListRender(allTasks, taskListContainer);
 
@@ -73,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
           inputModalNamelist.value = '';
           modalList.classList.remove('modal__list-name--active');
-          
+
         }
       })
     })
