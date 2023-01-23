@@ -11,6 +11,7 @@ export function renderNewList () {
   let newListName = document.createElement('span');
   newListName.classList.add('main-category__name');
   newListName.textContent = inputNamelist.value;
+  newList.setAttribute('data-listName', inputNamelist.value)
   
   newList.append(newListName);
   listCatalog.append(newList);

@@ -13,6 +13,11 @@
   }
 } */
 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 body {
   height: 100vh;
   background-color: #EEF1F6;
@@ -20,6 +25,7 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
+  animation: fadeIn 0.9s ease-in-out;
 }
 
 ::-webkit-scrollbar{

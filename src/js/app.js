@@ -24,12 +24,10 @@ document.addEventListener('DOMContentLoaded', () => {
   allTasks.push(testTask);
   console.log(testTask);
 
-
   function refreshElements(selector) {
     let elements = document.querySelectorAll(selector);
     return elements
   }
-
 
   function start () {
     taskListRender(allTasks, taskListContainer);
@@ -63,19 +61,15 @@ document.addEventListener('DOMContentLoaded', () => {
     addNewListModalBtns.forEach( btn => {
       btn.addEventListener('click', () => {
         if (btn.classList.contains('modal-list__btn-confirm')){
-
           renderNewList();
           let newAddeUserList = inputModalNamelist.value;
           allLists.push(newAddeUserList);
 
           inputModalNamelist.value = '';
           modalList.classList.remove('modal__list-name--active');
-
         } else if (btn.classList.contains('modal-list__btn-cancel')) {
-
           inputModalNamelist.value = '';
           modalList.classList.remove('modal__list-name--active');
-
         }
       })
     })
