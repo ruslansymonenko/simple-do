@@ -8,10 +8,22 @@ export function addNewTasks () {
 
   let task;
 
+  function generateUniqueTaskLabel() {
+    let date = new Date();
+    return {
+        id: `id${Math.random().toString(16).slice(2)}`,
+        date: date.toLocaleDateString(),
+        time: date.toLocaleTimeString()
+    };
+}
+
+
   if (inputNewTaskText.value) {
     let id ="id" + Math.random().toString(16).slice(2);
+    let taskLabel = generateUniqueTaskLabel();
+    console.log(taskLabel);
 
-    task = new Task(id, inputNewTaskText.value, {userList: '', allTasksList: true, favoriteList: false}); 
+    task = new Task(taskLabel, inputNewTaskText.value, {userList: '', allTasksList: true, favoriteList: false}); 
 
     inputNewTaskText.value = '';
     checkScrollbarVisible(taskList, taskListElements);
