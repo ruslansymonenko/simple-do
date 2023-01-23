@@ -1,9 +1,9 @@
 import { List } from "./List.js";
 
 export class Task extends List {
-  constructor (id, taskText, taskLists, isFavorite = false, check = false) {
+  constructor (taskLabel, taskText, taskLists, isFavorite = false, check = false) {
     super(taskLists);
-    this.id = id;
+    this.taskLabel = taskLabel;
     this.check = check;
     this.taskText = taskText;
     this.isFavorite = isFavorite;
@@ -20,7 +20,7 @@ export class Task extends List {
   taskRender (container) {
     let task = document.createElement('li');
     task.classList.add('main-tasks__list-item');
-    task.setAttribute('data-id', this.id);
+    task.setAttribute('data-id', this.taskLabel.id);
 
     if (this.isFavorite === true) {
       task.classList.add('main-tasks__list-item--favorite');
