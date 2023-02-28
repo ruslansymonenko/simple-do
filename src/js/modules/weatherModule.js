@@ -4,7 +4,7 @@ export function getWeather () {
   const cityContainer = document.querySelector('.header-info__weather-city');
   const weatherImg = document.querySelector('.header-info__weather-img');
 
-  fetch('http://api.weatherapi.com/v1/current.json?key=871d5f2d8cec481b898202849222605&q=Kiev&aqi=no', {
+  fetch('http://api.weatherapi.com/v1/current.json?key=key&q=Kiev&aqi=no', {
     method: "GET"
   })
     .then((response) => {return response.json()})
